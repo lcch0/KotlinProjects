@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="main_screen_list">
+        <item>This is a test list</item>
+        <item>with item 1</item>
+        <item>then item 2</item>
+    </string-array>
+
+</resources>

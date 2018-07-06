@@ -5,6 +5,7 @@ import android.support.design.widget.Snackbar
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.ArrayAdapter
 
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -21,6 +22,14 @@ class MainActivity : AppCompatActivity()
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show()
         }
+
+        var arr = loadStringArray();
+    }
+
+    private fun loadStringArray()
+    {
+        var strings = resources.getStringArray(R.array.main_screen_list)
+        var adapter = ArrayAdapter<String>()
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean

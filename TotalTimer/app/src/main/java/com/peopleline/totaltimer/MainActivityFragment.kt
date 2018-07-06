@@ -11,10 +11,11 @@ import android.view.ViewGroup
  */
 class MainActivityFragment : Fragment()
 {
+    private var _view: View? = null
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
-                              savedInstanceState: Bundle?): View?
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View?
     {
-        return inflater.inflate(R.layout.fragment_main, container, false)
+        _view = inflater.inflate(R.layout.fragment_main, container, false)
+        return _view
     }
 }
